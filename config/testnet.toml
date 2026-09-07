@@ -1,0 +1,27 @@
+# Binance Spot Testnet configuration.
+# API key/secret are never stored here — read from env vars at process start
+# (BINANCE_API_KEY / BINANCE_API_SECRET) or a secrets manager in later phases.
+
+[environment]
+name = "testnet"
+
+[binance.spot]
+rest_base_url = "https://testnet.binance.vision"
+ws_base_url = "wss://testnet.binance.vision/ws"
+stream_base_url = "wss://testnet.binance.vision/stream"
+
+[binance.futures]
+rest_base_url = "https://testnet.binancefuture.com"
+ws_base_url = "wss://stream.binancefuture.com/ws"
+
+[market_data]
+symbols = ["btcusdt"]
+depth_levels = 20
+depth_update_speed_ms = 100
+
+[risk]
+# Deliberately conservative defaults; Phase 1 tunes these per strategy.
+max_position_usd = 100.0
+max_order_usd = 20.0
+max_orders_per_minute = 20
+daily_loss_limit_usd = 25.0

@@ -1,0 +1,16 @@
+# Rust
+/rust/target/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+python/build/
+
+# Local env / secrets — never commit API keys.
+.env
+*.env.local
+
+# Captured market data (can be large; regenerate via the feed handler).
+/data/captures/
