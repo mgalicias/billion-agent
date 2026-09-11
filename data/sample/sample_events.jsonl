@@ -1,0 +1,4 @@
+{"kind":"snapshot","symbol":"btcusdt","event_time_ms":1000,"last_update_id":100,"bids":[{"price":100.00,"quantity":1.0},{"price":99.90,"quantity":2.0}],"asks":[{"price":100.10,"quantity":1.5},{"price":100.20,"quantity":2.5}]}
+{"kind":"depth","symbol":"btcusdt","event_time_ms":1100,"first_update_id":101,"final_update_id":102,"prev_final_update_id":null,"bids":[{"price":100.00,"quantity":0.5}],"asks":[{"price":100.10,"quantity":0}]}
+{"kind":"trade","symbol":"btcusdt","trade":{"trade_id":1,"event_time_ms":1150,"price":100.05,"quantity":0.1,"is_buyer_maker":false}}
+{"kind":"depth","symbol":"btcusdt","event_time_ms":1200,"first_update_id":103,"final_update_id":104,"prev_final_update_id":null,"bids":[],"asks":[{"price":100.30,"quantity":0.8}]}

@@ -1,0 +1,28 @@
+# Binance mainnet configuration.
+# NEVER point at this file until a change has been soaked on testnet per
+# docs/PLAN.md's promotion pipeline. API key/secret are never stored here —
+# read from env vars (BINANCE_API_KEY / BINANCE_API_SECRET) or a secrets
+# manager in later phases.
+
+[environment]
+name = "mainnet"
+
+[binance.spot]
+rest_base_url = "https://api.binance.com"
+ws_base_url = "wss://stream.binance.com:9443/ws"
+stream_base_url = "wss://stream.binance.com:9443/stream"
+
+[binance.futures]
+rest_base_url = "https://fapi.binance.com"
+ws_base_url = "wss://fstream.binance.com/ws"
+
+[market_data]
+symbols = ["btcusdt"]
+depth_levels = 20
+depth_update_speed_ms = 100
+
+[risk]
+max_position_usd = 100.0
+max_order_usd = 20.0
+max_orders_per_minute = 20
+daily_loss_limit_usd = 25.0
